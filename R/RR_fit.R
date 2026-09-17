@@ -196,15 +196,16 @@ cdn_er <- er %>%
    mutate(er = Harvest.rate..../100,
           cv = Harvest.CV)
 
- agg_er <- rep(as.vector(cdn_er$er),9)
- agg_cv <- rep(as.vector(cdn_er$cv),9)
+agg_er <- rep(as.vector(cdn_er$er),9)
+agg_cv <- rep(as.vector(cdn_er$cv),9)
 
- harv <- cbind(mssr_spwn_2, agg_er,agg_cv)
- harv$harv <- (harv$mean/(1-harv$agg_er))*harv$agg_er
- harvest <- harv[,c(1,2,9,8)]
- colnames(harvest) <- c("population", "year","harv","cv")
- write.csv(harvest,here(paste("data/generated/",lastyear,"/harvest-data.csv",sep="")))
- write.csv(mssr_spwn_2,here(paste("data/generated/",lastyear,"/esc-data.csv",sep="")),row.names = F)
+harv <- cbind(mssr_spwn_2, agg_er,agg_cv)
+harv$harv <- (harv$mean/(1-harv$agg_er))*harv$agg_er
+harvest <- harv[,c(1,2,9,8)]
+colnames(harvest) <- c("population", "year","harv","cv")
+
+write.csv(harvest,here(paste("data/generated/",lastyear,"/harvest-data.csv",sep="")))
+write.csv(mssr_spwn_2,here(paste("data/generated/",lastyear,"/esc-data.csv",sep="")),row.names = F)
 
 
 
