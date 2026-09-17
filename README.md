@@ -7,4 +7,7 @@ Details on the run-reconstruction and spawner-recruitment analyses are available
 and associated [Github repository](https://github.com/Pacific-salmon-assess/Yukon-Chinook-stock-assessment-2025/tree/main#yukon-chinook-stock-assessment-2025). 
 
 This repository is for annual updates to the run-reconstructions. 
+
+### To fit the run-reconstruction model and estimate spawning escapement and harvest by Conservation Unit reproduce the analysis:
+ - Clone or fork this repositor
 > 
