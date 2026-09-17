@@ -12,3 +12,5 @@ To generate updated reconstructions:
  - Run the spawner-recruit model fitting code ([`SR_fit.R`](https://github.com/Pacific-salmon-assess/yukon-CK-ResDoc/blob/main/analysis/R/SR_fit.R)) to fit the spawner-recruit models, and generate estimates of biological reference points.
 
 Please note that because of the structure of the multi-Conservation Unit border passage reconstructions model, and lack of perfect genetic sampling coverage across entire return migration in some past years (e.g., see [here](https://github.com/Pacific-salmon-assess/Yukon-Chinook-stock-assessment-2025/blob/main/csasdown/figure/gsi-run-samples.PNG)), as the model is fit to new years of data some historical estimates can change (e.g., for relatively small and late timed CUs). This type of retrospective bias is to be expected nd is a reminder of the imperfect nature of the observations and information the models are fit to.  
+
+We are deeply appreciative of the countless individuals and organizations that have collected data on Yukon Chinook salmon for many decades in both the U.S. and Canada. 
